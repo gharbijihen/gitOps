@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orders-deployment
-  labels:
-    app: orders
+  name: client-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: orders
+      app: client
   template:
     metadata:
       labels:
-        app: orders
+        app: client
     spec:
       containers:
-        - name: orders
-          image: 192.168.1.140:5000/docker-images/orders:latest
+        - name: client
+          image: 192.168.1.140:5000/docker-images/client:latest
           ports:
             - containerPort: 8080
