@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: auth-deployment
+  name: tickets-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: auth
+      app: tickets
   template:
     metadata:
       labels:
-        app: auth
+        app: tickets
     spec:
       containers:
-        - name: auth
-          image: 192.168.1.140:5000/docker-images/auth:latest
+        - name: tickets
+          image: 192.168.1.140:5000/docker-images/tickets:latest
           ports:
             - containerPort: 8080

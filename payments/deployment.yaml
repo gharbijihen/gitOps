@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tickets-deployment
+  name: payments-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: tickets
+      app: payments
   template:
     metadata:
       labels:
-        app: tickets
+        app: payments
     spec:
       containers:
-        - name: tickets
-          image: 192.168.1.122:5000/docker-images/tickets:latest
+        - name: payments
+          image: 192.168.1.140:5000/docker-images/payments:latest
           ports:
             - containerPort: 8080
