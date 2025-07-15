@@ -12,8 +12,11 @@ spec:
       labels:
         app: payments
     spec:
+      imagePullSecrets:
+        - name: nexus-creds
       containers:
         - name: payments
-          image: 192.168.1.140:8081/docker-images/payments:latest
+          image: 192.168.1.140:5000/docker-images/payments:latest
           ports:
             - containerPort: 8080
+
