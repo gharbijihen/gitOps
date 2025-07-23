@@ -16,6 +16,6 @@ spec:
         - name: nexus-creds
       containers:
         - name: client
-          image: 192.168.1.140:5000/docker-images/client:latest
+          image: jihengharbi/jihen-client:latest
           ports:
             - containerPort: 8080

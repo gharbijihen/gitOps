@@ -18,6 +18,6 @@ spec:
         - name: nexus-creds
       containers:
         - name: orders
-          image: 192.168.1.140:5000/docker-images/orders:latest
+          image: jihengharbi/jihen-orders:latest
           ports:
             - containerPort: 8080

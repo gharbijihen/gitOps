@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orders-deployment
+  name: expiration-deployment
   labels:
-    app: orders
+    app: expiration
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: orders
+      app: expiration
   template:
     metadata:
       labels:
-        app: orders
+        app: expiration
     spec:
       imagePullSecrets:
         - name: nexus-creds
       containers:
-        - name: orders
-          image: 192.168.1.140:5000/docker-images/orders:latest
+        - name: expiration
+          image: jihengharbi/jihen-expiration:latest
           ports:
             - containerPort: 8080

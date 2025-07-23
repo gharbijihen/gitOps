@@ -18,6 +18,7 @@ spec:
         - name: nexus-creds
       containers:
         - name: tickets
-          image: 192.168.1.140:5000/docker-images/tickets:latest
+          image: jihengharbi/jihen-tickets:latest 
+
           ports:
             - containerPort: 8080

@@ -16,7 +16,7 @@ spec:
         - name: nexus-creds
       containers:
         - name: payments
-          image: 192.168.1.140:5000/docker-images/payments:latest
+          image: jihengharbi/jihen-payments:latest
           ports:
             - containerPort: 8080
 
