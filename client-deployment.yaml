@@ -18,7 +18,7 @@ spec:
         - name: client
           image: jihengharbi/jihen-client:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
           env:
             - name: MONGO_URL
               value: "mongodb://mongo-service:27017"
