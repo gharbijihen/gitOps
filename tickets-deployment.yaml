@@ -21,4 +21,4 @@ spec:
           image: jihengharbi/jihen-tickets:latest 
 
           ports:
-            - containerPort: 8080
+            - containerPort: 3000

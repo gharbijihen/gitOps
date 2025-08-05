@@ -18,5 +18,5 @@ spec:
         - name: payments
           image: jihengharbi/jihen-payments:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
 

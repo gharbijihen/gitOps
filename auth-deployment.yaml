@@ -18,5 +18,5 @@ spec:
         - name: auth
           image: jihengharbi/jihen-auth:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
 
