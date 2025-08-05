@@ -15,7 +15,7 @@ spec:
             pathType: ImplementationSpecific
             backend:
               service:
-                name: rabbit-srv
+                name: rabbit-service
                 port:
                   number: 15672
   
