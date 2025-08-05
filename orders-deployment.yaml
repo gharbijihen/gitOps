@@ -21,3 +21,18 @@ spec:
           image: jihengharbi/jihen-orders:latest
           ports:
             - containerPort: 3000
+      env:
+        - name: MONGO_URI
+          value: "mongodb://tickets-mongo-service:27017/tickets"
+        - name: NODE_ENV
+          value: "development"
+        - name: JWT_KEY
+          valueFrom:
+            secretKeyRef:
+            name: jwt-secret
+            key: JWT_KEY
+        - name: RABBITMQ_URL
+          value: "amqp://guest:guest@rabbit-service:5672"
+
+
+
