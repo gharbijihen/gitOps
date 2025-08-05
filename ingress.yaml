@@ -8,16 +8,16 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: rabbitlokal.com
-      http:
-        paths:
-          - path: /
-            pathType: ImplementationSpecific
-            backend:
-              service:
-                name: rabbit-service
-                port:
-                  number: 15672
+    # - host: rabbitlokal.com
+    #   http:
+    #     paths:
+    #       - path: /
+    #         pathType: ImplementationSpecific
+    #         backend:
+    #           service:
+    #             name: rabbit-service
+    #             port:
+    #               number: 15672
   
     - host: ticketapp.com
       http:
