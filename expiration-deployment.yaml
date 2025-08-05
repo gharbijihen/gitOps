@@ -21,3 +21,15 @@ spec:
           image: jihengharbi/jihen-expiration:latest
           ports:
             - containerPort: 3000
+          env:
+            - name: MONGO_URI
+              value: "mongodb://mongo-service:27017/expiration"
+            - name: NODE_ENV
+              value: "development"
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
+
+
