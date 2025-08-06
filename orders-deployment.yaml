@@ -23,7 +23,7 @@ spec:
             - containerPort: 3000
       env:
         - name: MONGO_URI
-          value: "mongodb://tickets-mongo-service:27017/tickets"
+          value: "mongodb://mongo-service:27017/orders"
         - name: NODE_ENV
           value: "development"
         - name: JWT_KEY
