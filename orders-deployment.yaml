@@ -23,7 +23,7 @@ spec:
             - containerPort: 3000
           env:  # <--- ENV MUST BE inside the container spec
             - name: MONGO_URI
-              value: "mongodb://orders-mongo:27017/orders"  # FIXED: same name as your working MongoDB service
+              value: "mongodb://orders-mongo-srv:27017/orders"  # FIXED: same name as your working MongoDB service
             - name: NODE_ENV
               value: "development"
             - name: JWT_KEY
