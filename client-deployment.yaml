@@ -29,5 +29,7 @@ spec:
                 secretKeyRef:
                   name: jwt-secret
                   key: JWT_KEY
+            - name: CHOKIDAR_USEPOLLING
+              value: "true"
 
 
