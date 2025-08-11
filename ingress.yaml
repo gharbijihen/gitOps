@@ -28,35 +28,35 @@ spec:
               service:
                 name: payments-service
                 port:
-                  number: 80
+                  number: 3000
           - path: /api/users/?(.*)
             pathType: ImplementationSpecific
             backend:
               service:
                 name: auth-service
                 port:
-                  number: 80
+                  number: 3000
           - path: /api/tickets/?(.*)
             pathType: ImplementationSpecific
             backend:
               service:
                 name: tickets-service
                 port:
-                  number: 80
+                  number: 3000
           - path: /api/orders/?(.*)
             pathType: ImplementationSpecific
             backend:
               service:
                 name: orders-service
                 port:
-                  number: 80
+                  number: 3000
           - path: /?(.*)
             pathType: ImplementationSpecific
             backend:
               service:
                 name: client-service
                 port:
-                  number: 80
+                  number: 3000
 
 status:
   loadBalancer:
