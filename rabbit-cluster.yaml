@@ -9,7 +9,7 @@ spec:
       cpu: 1000m
       memory: 0.6Gi
     limits:
-      cpu: 3000m
+      cpu: 1000m
       memory: 0.6Gi
 
   rabbitmq:
