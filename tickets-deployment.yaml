@@ -30,7 +30,8 @@ spec:
                   name: jwt-secret
                   key: JWT_KEY
             - name: RABBITMQ_URL
-              value: "amqp://guest:guest@rabbit-service.default.svc.cluster.local:5672
+              value: "amqp://ticketuser:user@rabbit-service.default.svc.cluster.local:5672"
+              #value: "amqp://guest:guest@rabbit-service:5672"
 "
 
 
