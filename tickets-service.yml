@@ -7,6 +7,6 @@ spec:
     app: tickets
   ports:
     - protocol: TCP
-      port: 80
+      port: 300
       targetPort: 3000
   type: ClusterIP
